@@ -1,0 +1,5 @@
+
+Average Delay = 3.33
+Confidence Interval: ( 3.33, 3.33 )
+Population Mean = 10.0
+        
