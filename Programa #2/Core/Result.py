@@ -21,7 +21,7 @@ class Result:
 
         #len(samples): el tamaño del arreglo de muestras y por tanto contiene la cantidad de replicaciones.
         ci1 = sampleMean - t * (sampleStandardDeviation / math.sqrt(len(samples)))
-        ci2 = sampleMean - t * (sampleStandardDeviation / math.sqrt(len(samples)))
+        ci2 = sampleMean + t * (sampleStandardDeviation / math.sqrt(len(samples)))
 
         results = f"""
 Average Delay = {round(sampleMean, 2)}

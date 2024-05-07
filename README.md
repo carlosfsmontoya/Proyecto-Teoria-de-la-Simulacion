@@ -52,7 +52,7 @@ En respuesta a esto se recolectarán los tiempos de llegada y salida de cada cli
 
 - ¿Cómo funcionan las probabilidades de alimentación entre las colas?
 
-- ¿Cómo se puede controlar si se está en la cola inicial o cola final para?
+- ¿Cómo se puede controlar si se está en la cola inicial o cola final?
 
 
 
@@ -218,7 +218,7 @@ Este programa se encargará de de leer los resultados del programa #1, y a parti
 **II.V Análisis Estadístico.**
 --
 
-Con la ejecución del programa #1 obtenemos una lista de datos sin procesar, estos datos son procesos por el programa #2 donde son procesados y convertidos en información, obteniendo un gráfico con cada media de retraso obtenida en cada replicación y una salida con la media de retraso, los intervalos de confianza y la media poblacional. A continuación, se detalla este proceso:
+Con la ejecución del programa #1 obtenemos una lista de datos sin procesar, estos datos serán entradas para el programa #2 donde son procesados y convertidos en información, obteniendo un gráfico con cada media de retraso obtenida en cada replicación y una salida con la media de retraso, los intervalos de confianza y la media poblacional. A continuación, se detalla este proceso:
 
 Para los datos obtenidos en el programa #1 se usa un lamda con un valor de 0.2 y un mu con valor 0.3 para simular los tiempos de llegada y salida respectivamente, usando el método _expovariate()_ de la librería _random_ donde lamda y mu son enviados como parámetros de este método, lo que hace este método es recibir un parámetro 1/(media deseada) y a partir de dicho parámetro entrega un valor aleatorio. Una vez obtenemos los tiempos de llegada y salida que obtiene cada cliente en cada cola se calculan los tiempos de retraso (delay) y se procede a obtener una media de retraso obtenida en cada replicación. Por último, estos datos son almacenados en un archivo structuredData.tsv por el programa #1.
 
